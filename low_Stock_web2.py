@@ -63,4 +63,4 @@ def save_missing_skus(missing_skus):
     return 'File saved successfully'
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=10000)

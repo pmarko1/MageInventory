@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload datoteke default0.csv</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Izberi datoteko z zadnjim stanjem zalog v mojepivo.si:</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="default_file">
+        <button type="submit">Naloži</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
