@@ -15,7 +15,7 @@ def newest_csv_file(vzorec):
     if not sez_datotek:
         return None
     najnovejsa_datoteka = max(sez_datotek, key=os.path.getctime)
-    return os.path.basename(najnovejsa_datoteka)
+    return najnovejsa_datoteka
 
 
 
