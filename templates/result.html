@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1>Rezultati</h1>
+    <p>Današnje stanje sem primerjal z datoteko: {{ najnovejsa_datoteka }}</p>
     {% if missing_skus %}
-    <p>Od včeraj do danes se je naslednjim izdelkom zaloga znižala na vrednost 0:</p>
+    <p>Od zadnjič do danes se je naslednjim izdelkom zaloga znižala na vrednost 0:</p>
     <ul>
         {% for sku in missing_skus %}
         <li>{{ sku }}</li>
